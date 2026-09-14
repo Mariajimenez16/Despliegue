@@ -269,26 +269,15 @@ resultado = labelencoder.inverse_transform(Y_pred)
 print("Resultado:", resultado[0])
 
 st.markdown(
-    '<div class="seccion">🔍 Resultado de la predicción</div>',
-    unsafe_allow_html=True
-)
-
-st.markdown(
     f"""
-    <div class="resultado">
-
-        <div class="resultado-titulo">
-            🫀 Resultado
-        </div>
-
-        <br>
-
-        <div style="font-size: 30px; font-weight: bold;">
-            {resultado[0]}
-        </div>
-
-    </div>
-    """,
+<div class="resultado">
+<div class="resultado-titulo">🫀 Resultado</div>
+<br>
+<div style="font-size: 30px; font-weight: bold;">
+{resultado[0]}
+</div>
+</div>
+""",
     unsafe_allow_html=True
 )
 
