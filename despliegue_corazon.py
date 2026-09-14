@@ -179,16 +179,16 @@ with col2:
         "¿Se ha casado alguna vez?",
         ["No", "Sí"]
     )
-
-    smoking_status = st.selectbox(
-        "Estado de tabaquismo",
-        [
-            "never smoked",
-            "formerly smoked",
-            "smokes"
-        ]
-    )
-
+    
+smoking_status = st.selectbox(
+    "Estado de tabaquismo",
+    [
+        "Nunca ha fumado",
+        "Fumó anteriormente",
+        "Fuma actualmente",
+        "Desconocido"
+    ]
+)
 # Creamos un DataFrame con los datos ingresados
 
 datos = [[
